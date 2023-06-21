@@ -1,0 +1,18 @@
+Resources:
+  UpdateTemp:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handler
+      Runtime: go1.x
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /updateTemp
+            Method: post
+      Environment:
+        Variables:
+          AWS_ACCESS_KEY_ID: ASIA2UDSKLXW7W2WTO5Q
+          AWS_SECRET_ACCESS_KEY: aSglusWQPgT2/S1FEPnagGpfZjQn/Amzk9aahJGA
+          AWS_SESSION_TOKEN: IQoJb3JpZ2luX2VjEE4aCXVzLWVhc3QtMiJGMEQCICiFX/8NtOiUDII6Ix52aL6i+iN+PtnTZEzLYbf84gheAiAv74yysOYTT/6Arc11QjkJtOFNNGMyn4mK9H22rKd7nyrzAQjH//////////8BEAMaDDczMDM4NDE5NTA1MyIMsg7Y9D2WpJuE9NYtKscBZB/pwWx3B2Ql39NFFzXsp3oJnueZ30oBS9NT+gEUlQ3dGlH82mzY9V1bYHV6XionpQHI66CcKa5d7FIQdzKAr13TRt0AulFwEB6dMWKWsD2trXXZ9SzKSmRvXHp3ZTdSbt5Rq3qeNC5bQn3eFp6UOapSwEuIFs7saaOjdNijmE0l5pTKHUw27JnTZzCgxlmpgSBdtMQYRhTT08A/Js1UTGQeY89dbHMs28cS8D1gmabLlr70Ne6MLbABELX/QNSIOHbzMmxibTDulrelBjqZAQzDwINUae2LSC7UxbnEr+OcTthhbm+vVzORVIlTupida+pKVXk6boWOWefdoPM91JxIT6rU6ov/QUU2xlYR0EKrmpVQ6/cpOCL0Cb0hCCw2Iw3Rok3YZ48VajWNQD2V39supgnQOs1U/XROmvSBbB5OQ+6Ia4dYeKybeXKXzfZzHAMawUWaLRQ/m+l11DoSH2Q5Nuy8Z4GtxA==
+          AWS_REGION: us-east-2
